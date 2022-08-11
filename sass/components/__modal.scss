@@ -1,0 +1,210 @@
+.modal-closing {
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus+svg {
+
+        fill: var(--active-btn-color);
+    }
+
+}
+
+
+.modal {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    padding: 40px;
+    background-color: var(--header-bg-color);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+
+    &__form {
+
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+    }
+
+    &__label {
+
+        display: inline-block;
+        margin-bottom: 4px;
+        letter-spacing: 0.01em;
+    }
+
+    &__icon {
+
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        transition: fill var(--animation-transition);
+        }
+    &__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto;
+    letter-spacing: 0.03em;
+}
+
+    &__input-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.modal__icon-check {
+    width: 16px;
+    height: 15px;
+    display: block;
+    margin-right: 8px;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 2px;
+}
+
+    &__consent {
+
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+
+    &__link {
+    color: var(--active-text-color);
+    text-decoration-line: underline;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+}
+
+.modal-close {
+
+    height: 11px;
+    width: 11px;
+
+}
+
+.form-field {
+
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal__input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    background-color: inherit;
+    color: var(--secondary-text-color);
+    transition: border-color var(--animation-transition);
+
+    &:focus,
+    &:hover {
+
+        border-color: var(--active-text-color);
+    }
+}
+
+
+.modal__input:focus+.modal__icon,
+.modal__input:hover+.modal__icon {
+
+    fill: var(--active-btn-color);
+}
+
+.modal-feedback {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.modal__textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 5px;
+    outline: transparent;
+    background-color: inherit;
+    color: var(--secondary-text-color);
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+            border-color: var(--active-btn-color);
+        }
+}
+
+
+.modal__input-checkbox:checked+.modal__icon-check {
+
+    border: 0;
+    background-color: var(--active-btn-color);
+    background-image: url(../images/icons/1/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+
+}
+
+
+.btn__submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px 10px 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border: 0;
+    background-color: var(--active-btn-color);
+    color: var(--adrress-text-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--animation-transition);
+
+    &:hover,
+    &:focus {
+        background: #188ce8;
+    }
+}
+

@@ -1,0 +1,27 @@
+.section__header {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+}
+
+.section__ocuaption {
+
+    padding-top: 0;
+}
+
+.ocupation {
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.ocuaption__item:not(:last-child) {
+    margin-right: 30px;
+}

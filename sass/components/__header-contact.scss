@@ -1,0 +1,37 @@
+.header-contact {
+    margin-left: auto;
+
+}
+
+.tel {
+    margin-left: 50px;
+}
+
+.header-contact__link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: color var(--animation-transition);
+
+    &:hover,
+    &:focus {
+        color: var(--active-text-color);
+    }
+}
+
+
+
+.header-contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+
+}
