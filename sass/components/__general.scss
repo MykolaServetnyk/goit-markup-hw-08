@@ -18,17 +18,56 @@ img {
 
 .section {
 
+
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+
+    &__header {
+
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
+    }
+
 }
 
+
+
 .conteiner {
-    width: 1200px;
+    width: 100%;
     height: auto;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+
+    @media screen and (min-width:480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+    }
 
 }
 

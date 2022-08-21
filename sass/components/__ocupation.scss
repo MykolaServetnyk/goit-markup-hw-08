@@ -1,17 +1,10 @@
-.section__header {
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-    margin-bottom: 50px;
-}
-
-.section__ocuaption {
+.section__ocupation {
 
     padding-top: 0;
+
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
 }
 
 .ocupation {

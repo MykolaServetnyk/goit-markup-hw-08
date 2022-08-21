@@ -1,43 +1,71 @@
 .advantages {
 
-    display: flex;
+
     margin-left: auto;
     margin-right: auto;
     padding: 0;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+
+    }
+
+
     &__heading {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            text-transform: uppercase;
-            color: var(--secondary-text-color);
-            padding-bottom: 10px;
-            text-align: left;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+        padding-bottom: 10px;
+        text-align: left;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+
         }
-    
-    
+    }
+
+    &__item {
+        @media screen and (min-width:768px) {
+            flex-basis: calc((100% - 30px * 2) / 2);
+            margin: 15px;
+
+        }
+
+        @media screen and (min-width:1200px) {
+            flex-basis: calc((100% - 30px * 4) / 4);
+            margin: 15px;
+
+        }
+    }
+
     &__item:not(:last-child) {
-            margin-right: 30px;
-        }
-    
-    &__description {
-            width: 270px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-    
-        }
-    
-    &__icon {
-    
-            display: flex;
-            min-width: 270px;
-            min-height: 120px;
-            justify-content: center;
-            align-items: center;
-            background-color: #f5f4fa;
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
-            border-radius: 4px;
         }
+    }
+
+    &__description {
+        width: 270px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+    }
+
+    &__icon {
+
+        display: flex;
+        min-width: 270px;
+        min-height: 120px;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f4fa;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
 
 }
-
